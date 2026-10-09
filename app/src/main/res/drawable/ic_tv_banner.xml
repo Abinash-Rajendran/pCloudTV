@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android TV home-screen banner. The launcher requires 320x180; a cloud glyph on the
+  app's own background so the tile matches the app it opens.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path
+        android:fillColor="#0B1220"
+        android:pathData="M0,0h320v180h-320z" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M160,42 C133,42 111,61 106,85 C89,87 78,101 78,117 C78,135 92,149 110,149 L210,149 C228,149 242,135 242,117 C242,101 231,87 214,85 C209,61 187,42 160,42 Z" />
+    <!-- Play triangle, so the tile reads as a media app. -->
+    <path
+        android:fillColor="#0B1220"
+        android:pathData="M146,96 L146,130 L178,113 Z" />
+</vector>

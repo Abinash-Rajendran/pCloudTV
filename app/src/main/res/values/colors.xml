@@ -1,0 +1,5 @@
+<resources>
+    <!-- Matches PCloudColors.Background so the launch window does not flash. -->
+    <color name="pcloud_background">#FF0B1220</color>
+    <color name="pcloud_accent">#FF38BDF8</color>
+</resources>

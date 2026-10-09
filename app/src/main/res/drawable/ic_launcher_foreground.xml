@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Adaptive-icon foreground: the same cloud-with-play-triangle mark as
+  ic_tv_banner.xml, so the launcher icon and the Android TV home-row tile read as
+  one logo.
+
+  The path data is copied verbatim from the banner's 320x180 viewport and mapped
+  into this 108x108 one by the group transform below, rather than being redrawn —
+  edit the shape in one place and apply the same edit to the other.
+
+  Cloud and play triangle are a single path with fillType="evenOdd", so the
+  triangle is a hole rather than a dark fill. That keeps the mark correct when the
+  system re-tints it as a themed (monochrome) icon, where any second colour would
+  flatten into the first and the triangle would vanish.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!--
+      The banner's cloud occupies x 78..242, y 42..149. Scaled by 0.36 and
+      re-centred on (54,54) it spans 24.5..83.5 by 34.7..73.3 — inside the 66dp
+      circle every launcher mask is guaranteed to show, not merely inside the 72dp
+      safe square, so a circular mask cannot clip the cloud's shoulders.
+    -->
+    <group
+        android:scaleX="0.36"
+        android:scaleY="0.36"
+        android:translateX="-3.6"
+        android:translateY="19.62">
+        <path
+            android:fillColor="#38BDF8"
+            android:fillType="evenOdd"
+            android:pathData="M160,42 C133,42 111,61 106,85 C89,87 78,101 78,117 C78,135 92,149 110,149 L210,149 C228,149 242,135 242,117 C242,101 231,87 214,85 C209,61 187,42 160,42 Z M146,96 L146,130 L178,113 Z" />
+    </group>
+</vector>

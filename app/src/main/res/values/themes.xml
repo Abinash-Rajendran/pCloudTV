@@ -1,0 +1,14 @@
+<resources>
+
+    <!--
+      Plain dark, no action bar. The activity is a ComponentActivity hosting Compose,
+      so it needs no AppCompat theme; a DayNight parent also flashed white on launch
+      before the Compose dark scheme took over.
+    -->
+    <style name="Theme.Pcloud" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/pcloud_background</item>
+        <item name="android:colorBackground">@color/pcloud_background</item>
+        <item name="android:statusBarColor">@color/pcloud_background</item>
+        <item name="android:navigationBarColor">@color/pcloud_background</item>
+    </style>
+</resources>

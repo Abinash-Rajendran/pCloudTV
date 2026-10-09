@@ -1,0 +1,26 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+.kotlin
+.claude
+
+# Build outputs. Attach release APKs to a GitHub Release instead of committing them.
+*.apk
+
+# Release signing. Never commit these: anyone holding them can publish updates
+# that Android will accept as this app.
+*.jks
+*.keystore
+app/keystore.properties
